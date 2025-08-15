@@ -7,6 +7,9 @@ markdown: kramdown
 highlighter: rouge
 theme: minima
 
+# GitHub Pages source directory
+source: .
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap

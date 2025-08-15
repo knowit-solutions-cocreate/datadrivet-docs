@@ -1,19 +1,21 @@
 ---
 layout: page
 title: Existing Repositories
-nav_order: 6
+nav_order: 30
 ---
 
-# Existing Repositories
+## Existing Repositories
 
 Overview of current Datadrivet repositories and their purposes.
 
 ## Main Infrastructure Repository
 
 ### [datadrivet-infra-opendatastack](https://github.com/knowit-solutions-cocreate/datadrivet-infra-opendatastack)
-**Primary data infrastructure and pipeline repository**
 
-- **Purpose**: Main data processing pipelines, ETL jobs, and analytics infrastructure
+#### Primary data infrastructure and pipeline repository
+
+- **Purpose**: Main data processing pipelines, ETL jobs, and analytics
+  infrastructure
 - **Technology**: Python, dbt, Dagster, Apache Airflow
 - **Use Cases**:
   - Data ingestion from various sources (Airtable, Teamtailor, etc.)
@@ -21,34 +23,41 @@ Overview of current Datadrivet repositories and their purposes.
   - Analytics and reporting pipelines
   - ML model training and inference
 
-**When to add here**: Most data-related projects, utilities, and experiments should start here.
+**When to add here**: Most data-related projects, utilities, and experiments
+should start here.
 
 ## Template Repository
 
 ### [datadrivet-template](https://github.com/knowit-solutions-cocreate/datadrivet-template)
-**Template for creating new Datadrivet repositories**
+
+#### Template for creating new Datadrivet repositories
 
 - **Purpose**: Standardized starting point for new projects
-- **Includes**: 
+- **Includes**:
   - Pre-configured devenv setup
   - SOPS secrets management
   - Common development scripts
   - GitHub Actions workflows
   - Pre-commit hooks
 
-**When to use**: Only when you have a [valid reason](setting-up-repository.html#step-2-valid-reasons-for-a-new-repository) for a new repository.
+**When to use**: Only when you have a
+[valid reason](05-setting-up-repository.html#step-2-valid-reasons-for-a-new-repository)
+for a new repository.
 
 ## Support Repositories
 
 ### [nixos-wsl](https://github.com/knowit-solutions-cocreate/nixos-wsl)
-**NixOS-based WSL distribution for Windows development**
 
-- **Purpose**: Provides Windows developers with a pre-configured Linux environment
+#### NixOS-based WSL distribution for Windows development
+
+- **Purpose**: Provides Windows developers with a pre-configured Linux
+  environment
 - **Includes**: Nix, Devenv, Direnv, and common development tools
 - **Use Cases**: Windows developers who need the full Nix development stack
 
 ### [datadrivet-docs](https://github.com/knowit-solutions-cocreate/datadrivet-docs)
-**This documentation site**
+
+#### This documentation site
 
 - **Purpose**: Central documentation for Datadrivet infrastructure
 - **Technology**: Jekyll, GitHub Pages
@@ -61,7 +70,7 @@ Overview of current Datadrivet repositories and their purposes.
 **For most new work, add to `datadrivet-infra-opendatastack`:**
 
 - ✅ New data sources or integrations
-- ✅ Analytics scripts and reports  
+- ✅ Analytics scripts and reports
 - ✅ ML experiments and models
 - ✅ Utility scripts and tools
 - ✅ Data quality checks and monitoring
@@ -69,13 +78,13 @@ Overview of current Datadrivet repositories and their purposes.
 
 ### Examples by Project Type
 
-| Project Type | Recommended Location | Rationale |
-|--------------|---------------------|-----------|
-| New data connector | `datadrivet-infra-opendatastack` | Shares ETL infrastructure |
-| Analytics dashboard | `datadrivet-infra-opendatastack` | Uses existing data models |
-| ML model training | `datadrivet-infra-opendatastack` | Leverages data pipelines |
-| Data quality monitoring | `datadrivet-infra-opendatastack` | Integrates with existing workflows |
-| External API integration | `datadrivet-infra-opendatastack` | Shares secrets and configuration |
+| Project Type             | Recommended Location             | Rationale                          |
+| ------------------------ | -------------------------------- | ---------------------------------- |
+| New data connector       | `datadrivet-infra-opendatastack` | Shares ETL infrastructure          |
+| Analytics dashboard      | `datadrivet-infra-opendatastack` | Uses existing data models          |
+| ML model training        | `datadrivet-infra-opendatastack` | Leverages data pipelines           |
+| Data quality monitoring  | `datadrivet-infra-opendatastack` | Integrates with existing workflows |
+| External API integration | `datadrivet-infra-opendatastack` | Shares secrets and configuration   |
 
 ### Consider New Repository Only If
 
@@ -104,6 +113,7 @@ menu
 ### 3. Understand the Structure
 
 Each repository typically has:
+
 - **Root**: Configuration files (`devenv.yaml`, `.sops.yaml`, `.envrc`)
 - **src/**: Source code organized by functionality
 - **scripts/**: Utility scripts and tools
@@ -113,6 +123,7 @@ Each repository typically has:
 ### 4. Find Your Area
 
 Look for existing directories that match your work:
+
 - **Data connectors**: Usually in `src/connectors/` or `src/sources/`
 - **Transformations**: In `dbt/` or `src/transforms/`
 - **APIs**: In `src/api/` or `src/services/`
@@ -141,4 +152,5 @@ Each repository has designated maintainers:
 - **Access problems**: Contact repository maintainers
 - **New repository requests**: Discuss with team leads first
 
-Remember: **When in doubt, start with the main infrastructure repository**. You can always refactor later if a genuine need for separation emerges.
+Remember: **When in doubt, start with the main infrastructure repository**. You
+can always refactor later if a genuine need for separation emerges.
