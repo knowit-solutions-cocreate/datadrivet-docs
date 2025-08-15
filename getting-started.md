@@ -1,3 +1,11 @@
+---
+layout: page
+title: Getting Started
+nav_order: 2
+---
+
+# Getting Started
+
 ## Prerequisites
 
 - GitHub account with access to [knowit-solutions-cocreate](https://github.com/orgs/knowit-solutions-cocreate/) organization

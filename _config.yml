@@ -1,0 +1,23 @@
+title: Datadrivet Infrastructure Documentation
+description: Documentation for Datadrivet infrastructure setup and services
+baseurl: ""
+url: "https://knowit-solutions-cocreate.github.io"
+
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - devenv.lock
+  - devenv.nix
+  - devenv.yaml
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
