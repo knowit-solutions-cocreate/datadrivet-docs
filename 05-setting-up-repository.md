@@ -51,7 +51,7 @@ Create a new repository ONLY if you have a compelling reason:
 - "It's a new feature" - Features should typically be part of existing
   applications
 - "Different team" - Teams can share repositories with proper folder
-  organization
+  organization using github CODEOWNERS
 
 ## Step 3: Creating a New Repository (If Justified)
 
@@ -120,8 +120,7 @@ If you're unsure whether your project needs a new repository:
 1. Review existing repositories in
    [Existing Repositories](03-existing-repositories.html)
 2. Discuss with the Datadrivet team:
-   - Alexander Reinthal
    - Jimmy Flatting
 
-**Remember**: When in doubt, start with the existing monorepo. You can always
+**Remember**: When in doubt, start with the existing `datadrivet-infra-opendatastack`. You can always
 refactor later if a genuine need emerges.

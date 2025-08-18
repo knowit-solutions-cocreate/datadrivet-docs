@@ -8,23 +8,38 @@ nav_order: 30
 
 Overview of current Datadrivet repositories and their purposes.
 
-## Main Infrastructure Repository
+## Main Dagster Data Infrastructure Repository
 
 ### [datadrivet-infra-opendatastack](https://github.com/knowit-solutions-cocreate/datadrivet-infra-opendatastack)
 
 #### Primary data infrastructure and pipeline repository
 
-- **Purpose**: Main data processing pipelines, ETL jobs, and analytics
-  infrastructure
-- **Technology**: Python, dbt, Dagster, Apache Airflow
+- **Purpose**: All data processing pipelines, LLM job ad matching, ETL jobs, and
+  analytics infrastructure
+- **Technology**: Python, dbt, Dagster, Snowflake, Airtable and upstream message
+  intergrations,
 - **Use Cases**:
   - Data ingestion from various sources (Airtable, Teamtailor, etc.)
   - Data transformations and modeling
   - Analytics and reporting pipelines
-  - ML model training and inference
+  - LLM Job ad Matching (Cofinder pipeline)
 
 **When to add here**: Most data-related projects, utilities, and experiments
 should start here.
+
+## Azure Terraform Resources
+
+### [datk8s-dataplatform](https://github.com/knowit-solutions-cocreate/k8s-dataplatform)
+
+All Azure related resources are deployed through here.
+
+## Cofinder Portal
+
+### [datadrivet-cofinder-portal](https://github.com/knowit-solutions-cocreate/datadrivet-cofinder-portal)
+
+## Fluxcd (Kubernetes Continous Delivery)
+
+### [fluxcd-dataplatform](https://github.com/knowit-solutions-cocreate/fluxcd-dataplatform)
 
 ## Template Repository
 
@@ -71,24 +86,13 @@ for a new repository.
 
 - ✅ New data sources or integrations
 - ✅ Analytics scripts and reports
-- ✅ ML experiments and models
-- ✅ Utility scripts and tools
-- ✅ Data quality checks and monitoring
-- ✅ API endpoints and services
+-
 
-### Examples by Project Type
-
-| Project Type             | Recommended Location             | Rationale                          |
-| ------------------------ | -------------------------------- | ---------------------------------- |
-| New data connector       | `datadrivet-infra-opendatastack` | Shares ETL infrastructure          |
-| Analytics dashboard      | `datadrivet-infra-opendatastack` | Uses existing data models          |
-| ML model training        | `datadrivet-infra-opendatastack` | Leverages data pipelines           |
-| Data quality monitoring  | `datadrivet-infra-opendatastack` | Integrates with existing workflows |
-| External API integration | `datadrivet-infra-opendatastack` | Shares secrets and configuration   |
+**For CRUD things & MCP server, add to `datadrivet-cofinder-portal`**
 
 ### Consider New Repository Only If
 
-- **Different technology stack** (e.g., Java/Spring Boot application)
+- **Different technology stack** (i.e not python)
 - **Different deployment target** (e.g., mobile app, embedded system)
 - **External collaboration** (will be shared with external partners)
 - **Regulatory isolation** (compliance requires separate codebase)
@@ -110,47 +114,26 @@ direnv allow
 menu
 ```
 
-### 3. Understand the Structure
-
-Each repository typically has:
-
-- **Root**: Configuration files (`devenv.yaml`, `.sops.yaml`, `.envrc`)
-- **src/**: Source code organized by functionality
-- **scripts/**: Utility scripts and tools
-- **secrets/**: Encrypted configuration and credentials
-- **docs/**: Repository-specific documentation
-
-### 4. Find Your Area
-
-Look for existing directories that match your work:
-
-- **Data connectors**: Usually in `src/connectors/` or `src/sources/`
-- **Transformations**: In `dbt/` or `src/transforms/`
-- **APIs**: In `src/api/` or `src/services/`
-- **Analytics**: In `src/analytics/` or `notebooks/`
+See each respective repository's `REAMDE.md` for mor information on how to start
+contributing.
 
 ## Contributing Guidelines
 
-1. **Follow existing patterns** - Look at similar code in the repository
-2. **Update documentation** - Add or update relevant docs
-3. **Add tests** - Include appropriate test coverage
-4. **Use pre-commit hooks** - Code will be automatically formatted and linted
-5. **Update menu scripts** - Add your commands to the `menu` for discoverability
+0. **Use Vibes with Care** - Write your code first and then let your vibe-tool
+   of choice iterate on it. We are interested in how you think. At the time of
+   writing(August 2025), Agents/LLMs tend to overlook existing coding patterns
+   and this causes a lot of technical debt.
+1. **See rule 0** -
 
 ## Repository Maintenance
 
 Each repository has designated maintainers:
 
-- **Primary contact**: Alexander Reinthal, Jimmy Flatting
+- **Primary contact**: Jimmy Flatting
 - **Access management**: Repository owners manage SOPS keys and permissions
 - **Code review**: All changes require pull request review
 
 ## Need Help?
 
-- **General questions**: Ask in team Slack channels
-- **Technical issues**: Create issues in the relevant repository
-- **Access problems**: Contact repository maintainers
-- **New repository requests**: Discuss with team leads first
-
-Remember: **When in doubt, start with the main infrastructure repository**. You
-can always refactor later if a genuine need for separation emerges.
+- **General questions**: Ask in #cofinder or #cofinder-dev
+- **New repository requests**: Discuss in the above channels

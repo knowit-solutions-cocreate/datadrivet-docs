@@ -15,6 +15,10 @@ minutes, without manual setup or configuration.
 
 ## Technology Stack
 
+### Visual Overview
+
+![img](https://i.imgur.com/kLJ8NFT.png)
+
 ### Core Tools
 
 - **Nix** - A powerful package manager that ensures reproducible builds and
