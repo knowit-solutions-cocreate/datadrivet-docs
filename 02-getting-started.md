@@ -254,7 +254,7 @@ Mac expects the key file to be in a different location than where it gets genera
 ```bash
 # do this only if you're on a mac! 
 mkdir -p ~/Library/Application\ Support/sops/age 
-mv ~/.config/sops/age/keys.txt ~/Library/Application Support/sops/age/keys.txt
+mv ~/.config/sops/age/keys.txt ~/Library/Application\ Support/sops/age/keys.txt
 ```
 
 
