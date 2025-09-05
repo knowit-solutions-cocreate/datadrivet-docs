@@ -250,7 +250,7 @@ Please save your public key and add it to .sops.yaml:
 **Important:**
 
 - Save the public key displayed in the terminal
-- The private key is stored in `~/.config/sops/age/keys.txt` and should be kept
+- The private key is stored in `~/.config/sops/age/keys.txt` (or at `~/Library/Application Support/sops/age/keys.txt` if you're on a mac) and should be kept
   secret
 - You'll need to enter the public key in `.sops.yaml` located in the repository
   root
