@@ -29,7 +29,7 @@ should start here.
 
 ## Azure Terraform Resources
 
-### [datk8s-dataplatform](https://github.com/knowit-solutions-cocreate/k8s-dataplatform)
+### [k8s-dataplatform](https://github.com/knowit-solutions-cocreate/k8s-dataplatform)
 
 All Azure related resources are deployed through here.
 
@@ -86,7 +86,6 @@ for a new repository.
 
 - ✅ New data sources or integrations
 - ✅ Analytics scripts and reports
--
 
 **For CRUD things & MCP server, add to `datadrivet-cofinder-portal`**
 
