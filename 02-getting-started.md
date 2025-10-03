@@ -33,71 +33,24 @@ repositories.
 
 ## 1. Setting up the Trinity
 
-Below are setups for Linux, macOS and Windows.
+Below are setups for Windows with WSL (recommended), macOS and Linux.
 
-### Identify Your Shell
+### 1.1 Recommended: Installing dependencies on Windows with WSL
 
-To determine your current shell:
+Use [NixOS-WSL](https://github.com/knowit-solutions-cocreate/nixos-wsl). This
+WSL distribution contains the necessary dependencies to work with the holy
+trinity nix+devenv+direnv.
 
-```bash
-ps
-```
+1. Get WSL by running `wsl --install` in PowerShell
+2. Find the latest nixos.wsl file [here](https://github.com/knowit-solutions-cocreate/NixOS-WSL/releases/),
+   download it and run it (in Windows)
+3. Find "NixOS App" in Windows Start Menu to open a NixOS terminal
+4. Run `sudo nixos-rebuild switch` to sync your NixOS packages
+5. Activate direnv in your bash shell by running `echo 'eval "$(direnv hook bash)"' >> ~/.bashrc`
 
-### 1.1 Installing dependencies (Linux)
+**Success indicator:** Pressing Windows key, typing "nix" then Enter gives you a NixOS terminal.
 
-- Install nix
-
-```bash
-sh <(curl -L https://nixos.org/nix/install) --daemon
-```
-
-- Install devenv
-
-```bash
-nix-env --install --attr devenv -f https://github.com/NixOS/nixpkgs/tarball/nixpkgs-unstable/
-```
-
-- Install direnv
-
-```bash
-nix-env --install --attr direnv -f https://github.com/NixOS/nixpkgs/tarball/nixpkgs-unstable
-```
-
-Add these lines to `/etc/nix/nix.conf`:
-
-```bash
-sudo tee -a /etc/nix/nix.conf <<EOF
-extra-substituters = https://devenv.cachix.org
-extra-trusted-public-keys = devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=
-EOF
-```
-
-Then depending on the shell you are using:
-
-For bash:
-
-```bash
-echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
-```
-
-For zsh:
-
-```bash
-echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
-```
-
-For fish:
-
-```bash
-echo 'eval "$(direnv hook fish)"' >> ~/.fishrc
-```
-
-This sets up direnv to automatically activate the development environment when
-you enter that folder.
-
-**Success indicator:** Commands complete without errors.
-
-### 1.2 Installing dependencies (macOS)
+### 1.2 Installing dependencies on macOS
 
 ⚠️ **Important Note for Microsoft Defender for Mac Users**: Microsoft Defender
 for Mac, which is bundled with new Knowit laptops, has severe performance issues
@@ -139,25 +92,14 @@ nix-env --install --attr devenv -f https://github.com/NixOS/nixpkgs/tarball/nixp
 nix-env --install --attr direnv -f https://github.com/NixOS/nixpkgs/tarball/nixpkgs-unstable
 ```
 
-Then depending on the shell you are using:
-
-For zsh:
-
-```bash
-echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
-```
-
-For bash:
+Then set up your shell to use direnv, in the case of bash:
 
 ```bash
 echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
 ```
 
-For fish:
-
-```bash
-echo 'eval "$(direnv hook fish)"' >> ~/.fishrc
-```
+This sets up direnv to automatically activate the development environment when
+you enter that folder.
 
 Allow devenv's caching system:
 
@@ -170,23 +112,71 @@ EOF
 
 **Success indicator:** Commands complete without errors.
 
-### 1.3 Installing dependencies (Windows)
+### 1.3 Installing dependencies on Linux
 
-Use [NixOS-WSL](https://github.com/knowit-solutions-cocreate/nixos-wsl). This
-WSL distribution contains the necessary dependencies to work with the holy
-trinity nix+devenv+direnv. Navigate to it for further instructions. You can also
-choose to run your own WSL distribution and proceed from the previous section
-[Installing dependencies (Linux)].
-
-**Success indicator:** WSL environment is running and accessible.
-
-## 2. Verification
-
-Close your current terminal and open a new one. Then, clone the repo
-[datadrivet-infra-opendatastack](https://github.com/knowit-solutions-cocreate/datadrivet-infra-opendatastack/)
-and cd into it:
+- Install nix
 
 ```bash
+sh <(curl -L https://nixos.org/nix/install) --daemon
+```
+
+- Install devenv
+
+```bash
+nix-env --install --attr devenv -f https://github.com/NixOS/nixpkgs/tarball/nixpkgs-unstable/
+```
+
+- Install direnv
+
+```bash
+nix-env --install --attr direnv -f https://github.com/NixOS/nixpkgs/tarball/nixpkgs-unstable
+```
+
+Add these lines to `/etc/nix/nix.conf`:
+
+```bash
+sudo tee -a /etc/nix/nix.conf <<EOF
+extra-substituters = https://devenv.cachix.org
+extra-trusted-public-keys = devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=
+EOF
+```
+
+Then set up your shell to use direnv, in the case of bash:
+
+```bash
+echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
+```
+
+This sets up direnv to automatically activate the development environment when
+you enter that folder.
+
+**Success indicator:** Commands complete without errors.
+
+## 2. Set up access to git
+Close your current terminal and open a new one.
+
+Create a private key ("password") for letting your NixOS access github things you have access to:
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+Add the content of the generated /home/nixos/.ssh/id_ed25519.pub file under SSH keys in your
+[github settings](https://github.com/settings/keys).
+(The id_ed25519.pub content is a non-sensitive key that github uses to verify that your computer knows the secret "password" in id_ed25519.)
+
+
+Then, clone [datadrivet-infra-opendatastack](https://github.com/knowit-solutions-cocreate/datadrivet-infra-opendatastack/):
+```bash
+git clone git@github.com:knowit-solutions-cocreate/datadrivet-infra-opendatastack.git
+```
+
+**Success indicator:** Running `ls` shows that you have the datadrivet-infra-opendatastack directory locally.
+
+
+## 3. Verification
+
+```bash
+cd datadrivet-infra-opendatastack/
 direnv allow
 ```
 
@@ -222,12 +212,12 @@ next step.
 
 If installation fails, contact Alexander Reinthal or Jimmy Flatting.
 
-## 3. Set Up Secrets Management
+## 4. Set Up Secrets Management
 
 To decrypt secrets stored in git, you need a key pair and for someone to grant
 your key access to the secrets.
 
-### 3.1 Generate an Age Key
+### 4.1 Generate an Age Key
 
 Run this command:
 
@@ -257,7 +247,7 @@ Please save your public key and add it to .sops.yaml:
 
 **Success indicator:** Public key is generated and displayed.
 
-### 3.2 Add Your Key to the Project
+### 4.2 Add Your Key to the Project
 
 1. Add your public key to `.sops.yaml`:
 
@@ -288,7 +278,7 @@ git push origin HEAD
 
 **Success indicator:** PR is created and merged successfully.
 
-### 3.3 Start Development
+### 4.3 Start Development
 
 Once your PR is merged:
 
@@ -377,7 +367,7 @@ shell.
 
 **Success indicator:** Environment variables are exported and accessible.
 
-## 4. Browse Repository Options
+## 5. Browse Repository Options
 
 ```bash
 menu
