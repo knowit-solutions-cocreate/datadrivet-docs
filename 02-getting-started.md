@@ -48,7 +48,7 @@ trinity nix+devenv+direnv.
 4. Run `sudo nixos-rebuild switch` to sync your NixOS packages
 5. Activate direnv in your bash shell by running `echo 'eval "$(direnv hook bash)"' >> ~/.bashrc`
 
-**Success indicator:** WSL environment is running and accessible.
+**Success indicator:** Pressing Windows key, typing "nix" then Enter gives you a NixOS terminal.
 
 ### 1.2 Installing dependencies on macOS
 
@@ -170,7 +170,7 @@ Then, clone [datadrivet-infra-opendatastack](https://github.com/knowit-solutions
 git clone git@github.com:knowit-solutions-cocreate/datadrivet-infra-opendatastack.git
 ```
 
-**Success indicator:** Repo cloned.
+**Success indicator:** Running `ls` shows that you have the datadrivet-infra-opendatastack directory locally.
 
 
 ## 3. Verification
