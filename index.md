@@ -37,4 +37,4 @@ In the tab [Slack wisdom](07-slack-wisdom.html), we have short snippets from Sla
 
 You don't need to do anything else, the feed of posts in [Slack wisdom](07-slack-wisdom.html) is automatically generated from post
 
-You don't need to PR adding a single post, just merge directly to main.
+You don't need to PR adding a single post, just merge directly to main. YOLO.
