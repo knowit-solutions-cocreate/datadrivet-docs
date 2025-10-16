@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Slack wisdom
-permalink: /blog/
+permalink: /slack-wisdom/
 ---
 
 {% for post in site.categories.slack-wisdom %}
