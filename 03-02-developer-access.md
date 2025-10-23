@@ -10,7 +10,7 @@ A list of different systems related to CoFinder data processing pipelines is lis
 | System    | Link | What it does  | Who can help you with access | Other comments? |
 | -------- | ------- | -------- | ------- | ------- |
 | SOPS secrets | [inside the repository](https://github.com/knowit-solutions-cocreate/datadrivet-infra-opendatastack/tree/main/secrets) | Most access things you need are here | All developers in the project | Follow the [onboarding guide](02-getting-started.md) to add your key |
-| Azure KeyVault | [https://portal.azure.com](https://portal.azure.com) | A secure location to store some access information | Tom, Lunken | Ask to be added to team "Invativa" and to get role "Key Vault Secrets User" for datadrivet-cluster-prod |
+| Azure KeyVault | [https://portal.azure.com](https://portal.azure.com) | A secure location to store some access information | Tom, Lunken, Jimmy, Ruben, Fredrik M | Ask to be added to team "Invativa" and to get role "Key Vault Secrets User" for datadrivet-cluster-prod |
 | Keycloak |  | Access system that gives you access to several services | Jimmy, Fredrik, Andreas, Jon-Erik, Ruben, Tomas | |
 |Hashicorp Vault | [https://vault.platform.datadrivet.ai/](https://vault.platform.datadrivet.ai/ui) |  | see Keycloak |
 
@@ -27,7 +27,7 @@ A list of different systems related to CoFinder data processing pipelines is lis
 
 | System    | Link | What it does  | Who can help you with access | Other comments? |
 | -------- | ------- | -------- | ------- | ------- |
-|  Phoenix webui | [https://phoenix.platform.datadrivet.ai/](https://phoenix.platform.datadrivet.ai/) | This is where we track LLM call traces | ???? |  API access info in SOPS secrets | 
+|  Phoenix webui | [https://phoenix.platform.datadrivet.ai/](https://phoenix.platform.datadrivet.ai/) | This is where we track LLM call traces | see Azure KeyVault |  API access info in SOPS secrets | 
 | LiteLLM API definition | [https://litellm.platform.datadrivet.ai](https://litellm.platform.datadrivet.ai) | API definition to LiteLLM |  | No login | 
-| LiteLLM logs | [https://litellm.platform.datadrivet.ai/ui/](https://litellm.platform.datadrivet.ai/ui/?login=success) | API definition to LiteLLM | Andreas |  |
+| LiteLLM logs | [https://litellm.platform.datadrivet.ai/ui/](https://litellm.platform.datadrivet.ai/ui/?login=success) | API definition to LiteLLM | Andreas, Jimmy, Jon-Erik |  |
 | Openrouter | [https://openrouter.ai](https://openrouter.ai) | Site to check which all LLMs we have access to |  | No login, just browse the openly available parts | 
