@@ -14,7 +14,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-diagrams
 
 exclude:
   - devenv.lock
@@ -25,6 +24,3 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
-
-liquid:
-  error_mode: 'lax'
