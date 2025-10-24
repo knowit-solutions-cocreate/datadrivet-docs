@@ -4,6 +4,9 @@ title: Existing Repositories
 nav_order: 30
 ---
 
+- toc
+{:toc}
+
 ## Existing Repositories
 
 Overview of current Datadrivet repositories and their purposes.
