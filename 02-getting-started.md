@@ -37,7 +37,7 @@ Below are setups for Windows with WSL (recommended), macOS and Linux.
 
 ### 1.1 Recommended: Installing dependencies on Windows with WSL
 
-Use [NixOS-WSL](https://github.com/knowit-solutions-cocreate/nixos-wsl). This
+Use [NixOS-WSL](https://github.com/knowit-solutions-cocreate/NixOS-WSL/releases/). This
 WSL distribution contains the necessary dependencies to work with the holy
 trinity nix+devenv+direnv.
 
