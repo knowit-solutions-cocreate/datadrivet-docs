@@ -24,7 +24,8 @@ Some common ways of working for the CoFinder project. This is meant to be a livi
 ## Regular meetings
 
 Standups
-- The project runs regular standup meetings that go through ongoing work and any demos that might be helpful for the broader team to see
+- The project runs regular standup meetings that go through ongoing work.
+- Some standups have dedicated time demos that might be helpful for the broader team to see. Currently this is 1/week, but is subject to change as the needs of the project change.
 - There is a [standup board](https://github.com/knowit-solutions-cocreate/datadrivet-infra-opendatastack/issues?q=is%3Aissue%20state%3Aopen%20type%3AEpic) that is updated at each standup
 - In the standup, you as a developer are expected to clearly communicate your status, ie what you're currently working on and if you're experiencing any issues that you'd like help with. 
 - At the end of the standup, there is time to demo completed work
