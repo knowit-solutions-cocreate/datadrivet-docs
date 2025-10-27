@@ -1,8 +1,0 @@
-repos:
-- repo: local
-  hooks:
-  - id: donothing
-    name: a hook that does nothing
-    entry: sh -c "exit 0"
-    language: system
-    stages: [pre-commit]
