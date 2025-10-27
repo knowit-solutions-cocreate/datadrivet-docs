@@ -2,6 +2,9 @@
 layout: page
 title: Existing Repositories
 nav_order: 30
+toc:
+    min_level: 1
+    max_level: 1
 ---
 
 - toc
@@ -11,11 +14,11 @@ nav_order: 30
 
 Overview of current Datadrivet repositories and their purposes.
 
-## Main Dagster Data Infrastructure Repository
+### Main Dagster Data Infrastructure Repository
 
-### [datadrivet-infra-opendatastack](https://github.com/knowit-solutions-cocreate/datadrivet-infra-opendatastack)
+#### [datadrivet-infra-opendatastack](https://github.com/knowit-solutions-cocreate/datadrivet-infra-opendatastack)
 
-#### Primary data infrastructure and pipeline repository
+##### Primary data infrastructure and pipeline repository
 
 - **Purpose**: All data processing pipelines, LLM job ad matching, ETL jobs, and
   analytics infrastructure
@@ -34,23 +37,23 @@ should start here.
 
 ## Azure Terraform Resources
 
-### [k8s-dataplatform](https://github.com/knowit-solutions-cocreate/k8s-dataplatform)
+#### [k8s-dataplatform](https://github.com/knowit-solutions-cocreate/k8s-dataplatform)
 
 All Azure related resources are deployed through here.
 
-## Cofinder Portal
+### Cofinder Portal
 
-### [datadrivet-cofinder-portal](https://github.com/knowit-solutions-cocreate/datadrivet-cofinder-portal)
+#### [datadrivet-cofinder-portal](https://github.com/knowit-solutions-cocreate/datadrivet-cofinder-portal)
 
-## Fluxcd (Kubernetes Continous Delivery)
+### Fluxcd (Kubernetes Continous Delivery)
 
-### [fluxcd-dataplatform](https://github.com/knowit-solutions-cocreate/fluxcd-dataplatform)
+#### [fluxcd-dataplatform](https://github.com/knowit-solutions-cocreate/fluxcd-dataplatform)
 
-## Template Repository
+### Template Repository
 
-### [datadrivet-template](https://github.com/knowit-solutions-cocreate/datadrivet-template)
+#### [datadrivet-template](https://github.com/knowit-solutions-cocreate/datadrivet-template)
 
-#### Template for creating new Datadrivet repositories
+##### Template for creating new Datadrivet repositories
 
 - **Purpose**: Standardized starting point for new projects
 - **Includes**:
