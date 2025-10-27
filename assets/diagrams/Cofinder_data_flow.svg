@@ -1,0 +1,241 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="514pt" height="983pt" viewBox="0.00 0.00 513.8 983.18">
+<g id="graph0" class="graph" transform="translate(28.295489893910826,916.7150854947594) scale(0.9123820450384263)" data-name="Cofinder">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-979.18 509.8,-979.18 509.8,4 -4,4"/>
+<g id="clust1" class="cluster" data-name="cluster_job">
+
+<polygon fill="#f8f8f8" stroke="lightgrey" points="176,-527.39 176,-967.18 415,-967.18 415,-527.39 176,-527.39"/>
+<text text-anchor="middle" x="295.5" y="-945.18" font-family="Times,serif" font-size="20.00">Job ad data</text>
+</g>
+<g id="clust2" class="cluster" data-name="cluster_consult">
+
+<polygon fill="#f8f8f8" stroke="lightgrey" points="8,-527.39 8,-778.69 168,-778.69 168,-527.39 8,-527.39"/>
+<text text-anchor="middle" x="88" y="-756.69" font-family="Times,serif" font-size="20.00">Consultant data</text>
+</g>
+<!-- top_anchor -->
+<!-- mid_anchor -->
+<!-- top_anchor&#45;&gt;mid_anchor -->
+<!-- bottom_anchor -->
+<!-- mid_anchor&#45;&gt;bottom_anchor -->
+<!-- verama -->
+<g id="node4" class="node" pointer-events="visible" data-name="verama">
+
+<path fill="white" stroke="black" d="M394.69,-927.18C394.69,-927.18 361.31,-927.18 361.31,-927.18 355.31,-927.18 349.31,-921.18 349.31,-915.18 349.31,-915.18 349.31,-903.18 349.31,-903.18 349.31,-897.18 355.31,-891.18 361.31,-891.18 361.31,-891.18 394.69,-891.18 394.69,-891.18 400.69,-891.18 406.69,-897.18 406.69,-903.18 406.69,-903.18 406.69,-915.18 406.69,-915.18 406.69,-921.18 400.69,-927.18 394.69,-927.18"/>
+<text text-anchor="middle" x="378" y="-904.98" font-family="Times,serif" font-size="14.00">verama</text>
+</g>
+<!-- verama&#45;&gt;top_anchor -->
+<!-- int_union_job_ads -->
+<g id="node7" class="node" pointer-events="visible" data-name="int_union_job_ads">
+
+<path fill="white" stroke="black" d="M357.22,-850.06C357.22,-852.94 330.23,-855.28 297,-855.28 263.77,-855.28 236.78,-852.94 236.78,-850.06 236.78,-850.06 236.78,-803.1 236.78,-803.1 236.78,-800.22 263.77,-797.88 297,-797.88 330.23,-797.88 357.22,-800.22 357.22,-803.1 357.22,-803.1 357.22,-850.06 357.22,-850.06"/>
+<path fill="none" stroke="black" d="M357.22,-850.06C357.22,-847.18 330.23,-844.84 297,-844.84 263.77,-844.84 236.78,-847.18 236.78,-850.06"/>
+<text text-anchor="middle" x="297" y="-830.78" font-family="Times,serif" font-size="14.00">All job ads:</text>
+<text text-anchor="middle" x="297" y="-813.98" font-family="Times,serif" font-size="14.00">int_union_job_ads</text>
+</g>
+<!-- verama&#45;&gt;int_union_job_ads -->
+<g id="edge3" class="edge" data-name="verama-&gt;int_union_job_ads">
+
+<path fill="none" stroke="black" d="M353.26,-890.85C353.26,-890.85 353.26,-860.8 353.26,-860.8"/>
+<polygon fill="black" stroke="black" points="356.76,-860.8 353.26,-850.8 349.76,-860.8 356.76,-860.8"/>
+</g>
+<!-- fieldglass -->
+<g id="node5" class="node" pointer-events="visible" data-name="fieldglass">
+
+<path fill="white" stroke="black" d="M319.66,-927.18C319.66,-927.18 274.34,-927.18 274.34,-927.18 268.34,-927.18 262.34,-921.18 262.34,-915.18 262.34,-915.18 262.34,-903.18 262.34,-903.18 262.34,-897.18 268.34,-891.18 274.34,-891.18 274.34,-891.18 319.66,-891.18 319.66,-891.18 325.66,-891.18 331.66,-897.18 331.66,-903.18 331.66,-903.18 331.66,-915.18 331.66,-915.18 331.66,-921.18 325.66,-927.18 319.66,-927.18"/>
+<text text-anchor="middle" x="297" y="-904.98" font-family="Times,serif" font-size="14.00">fieldglass</text>
+</g>
+<!-- fieldglass&#45;&gt;int_union_job_ads -->
+<g id="edge4" class="edge" data-name="fieldglass-&gt;int_union_job_ads">
+
+<path fill="none" stroke="black" d="M297,-890.85C297,-890.85 297,-860.8 297,-860.8"/>
+<polygon fill="black" stroke="black" points="300.5,-860.8 297,-850.8 293.5,-860.8 300.5,-860.8"/>
+</g>
+<!-- hubspot -->
+<g id="node6" class="node" pointer-events="visible" data-name="hubspot">
+
+<path fill="white" stroke="black" d="M232.34,-927.18C232.34,-927.18 195.66,-927.18 195.66,-927.18 189.66,-927.18 183.66,-921.18 183.66,-915.18 183.66,-915.18 183.66,-903.18 183.66,-903.18 183.66,-897.18 189.66,-891.18 195.66,-891.18 195.66,-891.18 232.34,-891.18 232.34,-891.18 238.34,-891.18 244.34,-897.18 244.34,-903.18 244.34,-903.18 244.34,-915.18 244.34,-915.18 244.34,-921.18 238.34,-927.18 232.34,-927.18"/>
+<text text-anchor="middle" x="214" y="-904.98" font-family="Times,serif" font-size="14.00">hubspot</text>
+</g>
+<!-- hubspot&#45;&gt;int_union_job_ads -->
+<g id="edge5" class="edge" data-name="hubspot-&gt;int_union_job_ads">
+
+<path fill="none" stroke="black" d="M240.53,-890.85C240.53,-890.85 240.53,-860.8 240.53,-860.8"/>
+<polygon fill="black" stroke="black" points="244.03,-860.8 240.53,-850.8 237.03,-860.8 244.03,-860.8"/>
+</g>
+<!-- llm_job_eval -->
+<g id="node8" class="node" pointer-events="visible" data-name="llm_job_eval">
+
+<ellipse fill="#fff3cd" stroke="black" cx="297" cy="-720.69" rx="76.97" ry="41.09"/>
+<text text-anchor="middle" x="297" y="-733.29" font-family="Times,serif" font-size="14.00">LLM</text>
+<text text-anchor="middle" x="297" y="-716.49" font-family="Times,serif" font-size="14.00">(evaluate job</text>
+<text text-anchor="middle" x="297" y="-699.69" font-family="Times,serif" font-size="14.00">ad for company)</text>
+</g>
+<!-- int_union_job_ads&#45;&gt;llm_job_eval -->
+<g id="edge6" class="edge" data-name="int_union_job_ads-&gt;llm_job_eval">
+
+<path fill="none" stroke="black" d="M297,-797.64C297,-797.64 297,-773.41 297,-773.41"/>
+<polygon fill="black" stroke="black" points="300.5,-773.41 297,-763.41 293.5,-773.41 300.5,-773.41"/>
+</g>
+<!-- evaluated_job_ads -->
+<g id="node9" class="node" pointer-events="visible" data-name="evaluated_job_ads">
+
+<path fill="white" stroke="black" d="M341.51,-640.12C341.51,-641.92 315.73,-643.39 284,-643.39 252.27,-643.39 226.49,-641.92 226.49,-640.12 226.49,-640.12 226.49,-610.66 226.49,-610.66 226.49,-608.86 252.27,-607.39 284,-607.39 315.73,-607.39 341.51,-608.86 341.51,-610.66 341.51,-610.66 341.51,-640.12 341.51,-640.12"/>
+<path fill="none" stroke="black" d="M341.51,-640.12C341.51,-638.31 315.73,-636.84 284,-636.84 252.27,-636.84 226.49,-638.31 226.49,-640.12"/>
+<text text-anchor="middle" x="284" y="-621.19" font-family="Times,serif" font-size="14.00">evaluated-job-ads</text>
+</g>
+<!-- llm_job_eval&#45;&gt;evaluated_job_ads -->
+<g id="edge7" class="edge" data-name="llm_job_eval-&gt;evaluated_job_ads">
+
+<path fill="none" stroke="black" d="M284,-679.72C284,-679.72 284,-655.36 284,-655.36"/>
+<polygon fill="black" stroke="black" points="287.5,-655.36 284,-645.36 280.5,-655.36 287.5,-655.36"/>
+</g>
+<!-- phoenix -->
+<g id="node11" class="node" pointer-events="visible" data-name="phoenix">
+
+<path fill="white" stroke="black" d="M484.6,-640.12C484.6,-641.92 470.89,-643.39 454,-643.39 437.11,-643.39 423.4,-641.92 423.4,-640.12 423.4,-640.12 423.4,-610.66 423.4,-610.66 423.4,-608.86 437.11,-607.39 454,-607.39 470.89,-607.39 484.6,-608.86 484.6,-610.66 484.6,-610.66 484.6,-640.12 484.6,-640.12"/>
+<path fill="none" stroke="black" d="M484.6,-640.12C484.6,-638.31 470.89,-636.84 454,-636.84 437.11,-636.84 423.4,-638.31 423.4,-640.12"/>
+<text text-anchor="middle" x="454" y="-621.19" font-family="Times,serif" font-size="14.00">phoenix</text>
+</g>
+<!-- llm_job_eval&#45;&gt;phoenix -->
+<g id="edge18" class="edge" data-name="llm_job_eval-&gt;phoenix">
+
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M369.49,-706.15C369.49,-679.38 369.49,-625 369.49,-625 369.49,-625 411.5,-625 411.5,-625"/>
+<polygon fill="black" stroke="black" points="411.5,-628.5 421.5,-625 411.5,-621.5 411.5,-628.5"/>
+</g>
+<!-- embed_job -->
+<g id="node10" class="node" pointer-events="visible" data-name="embed_job">
+
+<path fill="white" stroke="black" d="M331.76,-568.12C331.76,-569.92 304.53,-571.39 271,-571.39 237.47,-571.39 210.24,-569.92 210.24,-568.12 210.24,-568.12 210.24,-538.66 210.24,-538.66 210.24,-536.86 237.47,-535.39 271,-535.39 304.53,-535.39 331.76,-536.86 331.76,-538.66 331.76,-538.66 331.76,-568.12 331.76,-568.12"/>
+<path fill="none" stroke="black" d="M331.76,-568.12C331.76,-566.31 304.53,-564.84 271,-564.84 237.47,-564.84 210.24,-566.31 210.24,-568.12"/>
+<text text-anchor="middle" x="271" y="-549.19" font-family="Times,serif" font-size="14.00">job ad embeddings</text>
+</g>
+<!-- evaluated_job_ads&#45;&gt;embed_job -->
+<g id="edge8" class="edge" data-name="evaluated_job_ads-&gt;embed_job">
+
+<path fill="none" stroke="black" d="M279.06,-607.22C279.06,-607.22 279.06,-578.98 279.06,-578.98"/>
+<polygon fill="black" stroke="black" points="282.56,-578.98 279.06,-568.98 275.56,-578.98 282.56,-578.98"/>
+</g>
+<!-- job_table -->
+<g id="node16" class="node" pointer-events="visible" data-name="job_table">
+
+<path fill="white" stroke="black" d="M169.03,-494.42C169.03,-494.42 59.8,-445.86 59.8,-445.86 54.32,-443.43 54.32,-438.55 59.8,-436.12 59.8,-436.12 169.03,-387.56 169.03,-387.56 174.52,-385.13 185.48,-385.13 190.97,-387.56 190.97,-387.56 300.2,-436.12 300.2,-436.12 305.68,-438.55 305.68,-443.43 300.2,-445.86 300.2,-445.86 190.97,-494.42 190.97,-494.42 185.48,-496.85 174.52,-496.85 169.03,-494.42"/>
+<text text-anchor="middle" x="180" y="-453.59" font-family="Times,serif" font-size="14.00">Filter experience</text>
+<text text-anchor="middle" x="180" y="-436.79" font-family="Times,serif" font-size="14.00">based on embedding</text>
+<text text-anchor="middle" x="180" y="-419.99" font-family="Times,serif" font-size="14.00">similarity</text>
+</g>
+<!-- embed_job&#45;&gt;job_table -->
+<g id="edge10" class="edge" data-name="embed_job-&gt;job_table">
+
+<path fill="none" stroke="black" d="M260.6,-535.08C260.6,-535.08 260.6,-475.47 260.6,-475.47"/>
+<polygon fill="black" stroke="black" points="264.1,-475.47 260.6,-465.47 257.1,-475.47 264.1,-475.47"/>
+</g>
+<!-- llm_matcher -->
+<g id="node12" class="node" pointer-events="visible" data-name="llm_matcher">
+
+<ellipse fill="#fff3cd" stroke="black" cx="180" cy="-305.3" rx="90.5" ry="41.09"/>
+<text text-anchor="middle" x="180" y="-317.9" font-family="Times,serif" font-size="14.00">LLM</text>
+<text text-anchor="middle" x="180" y="-301.1" font-family="Times,serif" font-size="14.00">(evaluate consultant</text>
+<text text-anchor="middle" x="180" y="-284.3" font-family="Times,serif" font-size="14.00">for job)</text>
+</g>
+<!-- dot_matches -->
+<g id="node13" class="node" pointer-events="visible" data-name="dot_matches">
+
+<path fill="white" stroke="black" d="M255.8,-222.88C255.8,-225.76 221.83,-228.1 180,-228.1 138.17,-228.1 104.2,-225.76 104.2,-222.88 104.2,-222.88 104.2,-175.92 104.2,-175.92 104.2,-173.04 138.17,-170.7 180,-170.7 221.83,-170.7 255.8,-173.04 255.8,-175.92 255.8,-175.92 255.8,-222.88 255.8,-222.88"/>
+<path fill="none" stroke="black" d="M255.8,-222.88C255.8,-220 221.83,-217.66 180,-217.66 138.17,-217.66 104.2,-220 104.2,-222.88"/>
+<text text-anchor="middle" x="180" y="-203.6" font-family="Times,serif" font-size="14.00">Consultant matches:</text>
+<text text-anchor="middle" x="180" y="-186.8" font-family="Times,serif" font-size="14.00">obt_consultant_matches</text>
+</g>
+<!-- llm_matcher&#45;&gt;dot_matches -->
+<g id="edge12" class="edge" data-name="llm_matcher-&gt;dot_matches">
+
+<path fill="none" stroke="black" d="M180,-263.75C180,-263.75 180,-233.73 180,-233.73"/>
+<polygon fill="black" stroke="black" points="183.5,-233.73 180,-223.73 176.5,-233.73 183.5,-233.73"/>
+</g>
+<!-- matches_db -->
+<g id="node14" class="node" pointer-events="visible" data-name="matches_db">
+
+<path fill="white" stroke="black" d="M140.32,-129.68C140.32,-132.56 121.35,-134.9 98,-134.9 74.65,-134.9 55.68,-132.56 55.68,-129.68 55.68,-129.68 55.68,-82.72 55.68,-82.72 55.68,-79.84 74.65,-77.5 98,-77.5 121.35,-77.5 140.32,-79.84 140.32,-82.72 140.32,-82.72 140.32,-129.68 140.32,-129.68"/>
+<path fill="none" stroke="black" d="M140.32,-129.68C140.32,-126.8 121.35,-124.46 98,-124.46 74.65,-124.46 55.68,-126.8 55.68,-129.68"/>
+<text text-anchor="middle" x="98" y="-110.4" font-family="Times,serif" font-size="14.00">matches DB</text>
+<text text-anchor="middle" x="98" y="-93.6" font-family="Times,serif" font-size="14.00">(postgres)</text>
+</g>
+<!-- dot_matches&#45;&gt;matches_db -->
+<g id="edge13" class="edge" data-name="dot_matches-&gt;matches_db">
+
+<path fill="none" stroke="black" d="M122.38,-171.44C122.38,-171.44 122.38,-140.64 122.38,-140.64"/>
+<polygon fill="black" stroke="black" points="125.88,-140.64 122.38,-130.64 118.88,-140.64 125.88,-140.64"/>
+</g>
+<!-- notifications -->
+<g id="node17" class="node" pointer-events="visible" data-name="notifications">
+
+<polygon fill="#e8f5e9" stroke="black" points="359.5,-124.2 158.5,-124.2 158.5,-88.2 365.5,-88.2 365.5,-118.2 359.5,-124.2"/>
+<polyline fill="none" stroke="black" points="359.5,-124.2 359.5,-118.2"/>
+<polyline fill="none" stroke="black" points="365.5,-118.2 359.5,-118.2"/>
+<text text-anchor="middle" x="262" y="-102" font-family="Times,serif" font-size="14.00">Notifications for teams, Slack etc.</text>
+</g>
+<!-- dot_matches&#45;&gt;notifications -->
+<g id="edge15" class="edge" data-name="dot_matches-&gt;notifications">
+
+<path fill="none" stroke="black" d="M207.2,-170.42C207.2,-170.42 207.2,-136.11 207.2,-136.11"/>
+<polygon fill="black" stroke="black" points="210.7,-136.11 207.2,-126.11 203.7,-136.11 210.7,-136.11"/>
+</g>
+<!-- portal -->
+<g id="node15" class="node" pointer-events="visible" data-name="portal">
+
+<path fill="white" stroke="black" d="M138.54,-41.4C138.54,-41.4 57.46,-41.4 57.46,-41.4 51.46,-41.4 45.46,-35.4 45.46,-29.4 45.46,-29.4 45.46,-12.2 45.46,-12.2 45.46,-6.2 51.46,-0.2 57.46,-0.2 57.46,-0.2 138.54,-0.2 138.54,-0.2 144.54,-0.2 150.54,-6.2 150.54,-12.2 150.54,-12.2 150.54,-29.4 150.54,-29.4 150.54,-35.4 144.54,-41.4 138.54,-41.4"/>
+<text text-anchor="middle" x="98" y="-25" font-family="Times,serif" font-size="14.00">CoFinder portal</text>
+<text text-anchor="middle" x="98" y="-8.2" font-family="Times,serif" font-size="14.00">(frontend)</text>
+</g>
+<!-- matches_db&#45;&gt;portal -->
+<g id="edge14" class="edge" data-name="matches_db-&gt;portal">
+
+<path fill="none" stroke="black" d="M98,-77.29C98,-77.29 98,-53.37 98,-53.37"/>
+<polygon fill="black" stroke="black" points="101.5,-53.37 98,-43.37 94.5,-53.37 101.5,-53.37"/>
+</g>
+<!-- job_table&#45;&gt;llm_matcher -->
+<g id="edge11" class="edge" data-name="job_table-&gt;llm_matcher">
+
+<path fill="none" stroke="black" d="M180,-382.26C180,-382.26 180,-358.06 180,-358.06"/>
+<polygon fill="black" stroke="black" points="183.5,-358.06 180,-348.06 176.5,-358.06 183.5,-358.06"/>
+</g>
+<!-- cinode -->
+<g id="node18" class="node" pointer-events="visible" data-name="cinode">
+
+<path fill="white" stroke="black" d="M127.96,-738.69C127.96,-738.69 48.04,-738.69 48.04,-738.69 42.04,-738.69 36.04,-732.69 36.04,-726.69 36.04,-726.69 36.04,-714.69 36.04,-714.69 36.04,-708.69 42.04,-702.69 48.04,-702.69 48.04,-702.69 127.96,-702.69 127.96,-702.69 133.96,-702.69 139.96,-708.69 139.96,-714.69 139.96,-714.69 139.96,-726.69 139.96,-726.69 139.96,-732.69 133.96,-738.69 127.96,-738.69"/>
+<text text-anchor="middle" x="88" y="-716.49" font-family="Times,serif" font-size="14.00">cinode (profile)</text>
+</g>
+<!-- people_exp -->
+<g id="node19" class="node" pointer-events="visible" data-name="people_exp">
+
+<path fill="white" stroke="black" d="M148.44,-640.12C148.44,-641.92 121.35,-643.39 88,-643.39 54.65,-643.39 27.56,-641.92 27.56,-640.12 27.56,-640.12 27.56,-610.66 27.56,-610.66 27.56,-608.86 54.65,-607.39 88,-607.39 121.35,-607.39 148.44,-608.86 148.44,-610.66 148.44,-610.66 148.44,-640.12 148.44,-640.12"/>
+<path fill="none" stroke="black" d="M148.44,-640.12C148.44,-638.31 121.35,-636.84 88,-636.84 54.65,-636.84 27.56,-638.31 27.56,-640.12"/>
+<text text-anchor="middle" x="88" y="-621.19" font-family="Times,serif" font-size="14.00">people_experience</text>
+</g>
+<!-- cinode&#45;&gt;people_exp -->
+<g id="edge16" class="edge" data-name="cinode-&gt;people_exp">
+
+<path fill="none" stroke="black" d="M88,-702.31C88,-702.31 88,-655.22 88,-655.22"/>
+<polygon fill="black" stroke="black" points="91.5,-655.22 88,-645.22 84.5,-655.22 91.5,-655.22"/>
+</g>
+<!-- consult_emb -->
+<g id="node20" class="node" pointer-events="visible" data-name="consult_emb">
+
+<path fill="white" stroke="black" d="M160.2,-568.12C160.2,-569.92 127.84,-571.39 88,-571.39 48.16,-571.39 15.8,-569.92 15.8,-568.12 15.8,-568.12 15.8,-538.66 15.8,-538.66 15.8,-536.86 48.16,-535.39 88,-535.39 127.84,-535.39 160.2,-536.86 160.2,-538.66 160.2,-538.66 160.2,-568.12 160.2,-568.12"/>
+<path fill="none" stroke="black" d="M160.2,-568.12C160.2,-566.31 127.84,-564.84 88,-564.84 48.16,-564.84 15.8,-566.31 15.8,-568.12"/>
+<text text-anchor="middle" x="88" y="-549.19" font-family="Times,serif" font-size="14.00">consultant embeddings</text>
+</g>
+<!-- people_exp&#45;&gt;consult_emb -->
+<g id="edge17" class="edge" data-name="people_exp-&gt;consult_emb">
+
+<path fill="none" stroke="black" d="M88,-607.22C88,-607.22 88,-578.98 88,-578.98"/>
+<polygon fill="black" stroke="black" points="91.5,-578.98 88,-568.98 84.5,-578.98 91.5,-578.98"/>
+</g>
+<!-- consult_emb&#45;&gt;job_table -->
+<g id="edge19" class="edge" data-name="consult_emb-&gt;job_table">
+
+<path fill="none" stroke="black" d="M104.63,-535.08C104.63,-535.08 104.63,-477.52 104.63,-477.52"/>
+<polygon fill="black" stroke="black" points="108.13,-477.52 104.63,-467.52 101.13,-477.52 108.13,-477.52"/>
+</g>
+</g>
+</svg>

@@ -27,6 +27,8 @@ Overview of current Datadrivet repositories and their purposes.
 **When to add here**: Most data-related projects, utilities, and experiments
 should start here.
 
+[The CoFinder data infrastructure and data pipeline is more thoroughly explained on this page](cofinder-explained.md)
+
 ## Azure Terraform Resources
 
 ### [k8s-dataplatform](https://github.com/knowit-solutions-cocreate/k8s-dataplatform)

@@ -1,0 +1,84 @@
+digraph Cofinder {
+  rankdir=UD;
+  graph [fontsize=20, splines=ortho];
+  node [shape=box, style="rounded,filled", fillcolor=white];
+
+  /* invisible anchors to enforce three horizontal bands (top / middle / bottom) */
+  top_anchor    [shape=point, style=invis];
+  mid_anchor    [shape=point, style=invis];
+  bottom_anchor [shape=point, style=invis];
+
+  /* make anchors form a vertical chain so mid_anchor stays between top and bottom */
+  top_anchor -> mid_anchor [style=invis, weight=1000, minlen=2];
+  mid_anchor -> bottom_anchor [style=invis, weight=1000, minlen=2];
+
+  /* -------------------- Job ad pipeline (top row) -------------------- */
+  subgraph cluster_job {
+    label="Job ad data";
+    color=lightgrey;
+    style=filled;
+    fillcolor="#f8f8f8";
+
+    verama       [label="verama"];
+    fieldglass   [label="fieldglass"];
+    hubspot      [label="hubspot"];
+
+    int_union_job_ads [label="All job ads:\nint_union_job_ads", shape=cylinder];
+    llm_job_eval      [label="LLM\n(evaluate job\nad for company)", shape=ellipse, style=filled, fillcolor="#fff3cd"];
+    evaluated_job_ads [label="evaluated-job-ads", shape=cylinder];
+    embed_job         [label="job ad embeddings", shape=cylinder];
+
+    verama -> int_union_job_ads;
+    fieldglass -> int_union_job_ads;
+    hubspot -> int_union_job_ads;
+
+    int_union_job_ads -> llm_job_eval;
+    llm_job_eval -> evaluated_job_ads;
+    evaluated_job_ads -> embed_job;
+
+    verama -> top_anchor [style=invis, weight=50];
+  }
+
+  /* -------------------- Shared components (middle row) -------------------- */
+  phoenix      [label="phoenix", shape=cylinder];
+  llm_matcher  [label="LLM\n(evaluate consultant\nfor job)", shape=ellipse, style=filled, fillcolor="#fff3cd"];
+  dot_matches  [label="Consultant matches:\nobt_consultant_matches", shape=cylinder];
+  matches_db   [label="matches DB\n(postgres)", shape=cylinder];
+  portal       [label="CoFinder portal\n(frontend)"];
+  job_table    [label="Filter experience\nbased on embedding\nsimilarity", shape=diamond, style="rounded,filled", fillcolor=white];
+
+  /* new notifications node */
+  notifications [label="Notifications for teams, Slack etc.", shape=note, fillcolor="#e8f5e9"];
+
+  /* anchor shared nodes to mid_anchor */
+  embed_job -> job_table;
+  job_table -> llm_matcher;
+  llm_matcher -> dot_matches;
+  dot_matches -> matches_db;
+  matches_db -> portal;
+
+  /* new connection from consultant matches to notifications */
+  dot_matches -> notifications;
+
+  /* -------------------- Consultant pipeline (bottom row) -------------------- */
+  subgraph cluster_consult {
+    label="Consultant data";
+    color=lightgrey;
+    style=filled;
+    fillcolor="#f8f8f8";
+
+    cinode      [label="cinode (profile)"];
+    people_exp  [label="people_experience", shape=cylinder];
+    consult_emb [label="consultant embeddings", shape=cylinder];
+
+    cinode -> people_exp;
+    people_exp -> consult_emb;
+  }
+
+  /* -------------------- Cross/Shared edges -------------------- */
+  llm_job_eval -> phoenix [style=dashed];
+  consult_emb -> job_table;
+
+  /* -------------------- visual settings -------------------- */
+  edge [fontsize=9];
+}
