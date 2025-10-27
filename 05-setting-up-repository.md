@@ -4,7 +4,11 @@ title: Setting up a Repository
 nav_order: 50
 ---
 
-## Setting up a Repository
+<nav class="toc" markdown="1">
+
+- toc
+{:toc}
+</nav>
 
 ## Step 1: Do You Really Need a New Repository?
 

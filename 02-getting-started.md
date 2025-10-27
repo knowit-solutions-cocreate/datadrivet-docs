@@ -4,7 +4,8 @@ title: Getting Started
 nav_order: 20
 ---
 
-## Getting Started
+- toc
+{:toc}
 
 ## Prerequisites
 
