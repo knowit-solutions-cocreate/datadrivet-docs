@@ -1,13 +1,16 @@
 ---
-layout: page
 title: CoFinder data infrastructure
+permalink: /cofinder/
+toc: true
+sidebar:
+  nav: "docs"
 ---
 
 CoFinder is a system designed to automate the process of identifying relevant job ads for different Knowit organisations and matching them with the most suitable consultants. The fundamental idea is to gather job advertisements from various external sources, such as Verama, Fieldglass, and HubSpot, and integrate this information with our consultants' professional profiles and experiences retrieved from Cinode. By connecting opportunities with internal talent, CoFinder aims to streamline business development, allowing the company to quickly identify which relevant job ads have been posted and which specific consultants are well-suited for them.
 
 At the heart of CoFinder is a data pipeline orchestrated using Dagster. The first main step involves ingesting, cleansing, and consolidating all job advertisements into a unified data store. These jobs are then subjected to an evaluation process where they are ranked for relevance to the company. Simultaneously, consultant data from Cinode which represent individual skills and experiences is processed and run through an embedding model. The final step involves matching the relevant job ads against the consultant profiles, generating a rank for each consultant/job pairing. The resulting matches and detailed data are loaded into a database and made available for review and action via the CoFinder Portal. See *Figure 1* for a schematic of the data flow in the main pipeline.
 
-![img](assets/diagrams/Cofinder_data_flow.svg)
+![img](../assets/diagrams/Cofinder_data_flow.svg)
 *Figure 1: A schematic of the data flow in the CoFinder system. Only the most central assets have been named in the diagram.*
 
 Below, each stage is explained in more detail.

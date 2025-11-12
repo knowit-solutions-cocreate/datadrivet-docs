@@ -1,7 +1,7 @@
 ---
-layout: page
 title: About
-nav_order: 60
+permalink: /about/
+toc: true
 ---
 
 ## About Datadrivet Infrastructure
@@ -52,8 +52,8 @@ management:
 
 If you encounter issues:
 
-1. Check the [Getting Started](02-getting-started.html) guide
-2. Review [existing repositories](03-existing-repositories.html) for examples
+1. Check the [Getting Started](/getting-started/) guide
+2. Review [existing repositories](/existing-repositories/) for examples
 3. Contact the Datadrivet team:
    - Alexander Reinthal
    - Jimmy Flatting

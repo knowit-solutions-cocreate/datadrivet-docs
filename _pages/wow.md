@@ -1,7 +1,9 @@
 ---
-layout: page
-title: WoW
-nav_order: 20
+title: Ways of Working
+permalink: /wow/
+toc: true
+sidebar:
+  nav: "docs"
 ---
 
 Some common ways of working for the CoFinder project. This is meant to be a living document that adapts to the reality. If something that is written here doesn't seem to match with the current reality, please raise that question at a standup and if others agree, make a change in this page.

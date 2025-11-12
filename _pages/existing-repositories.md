@@ -1,18 +1,18 @@
 ---
-layout: page
 title: Existing Repositories
-nav_order: 30
+permalink: /existing-repositories/
+toc: true
+sidebar:
+  nav: "repos"
 ---
-
-## Existing Repositories
 
 Overview of current Datadrivet repositories and their purposes.
 
-## Main Dagster Data Infrastructure Repository
+### Main Dagster Data Infrastructure Repository
 
-### [datadrivet-infra-opendatastack](https://github.com/knowit-solutions-cocreate/datadrivet-infra-opendatastack)
+#### [datadrivet-infra-opendatastack](https://github.com/knowit-solutions-cocreate/datadrivet-infra-opendatastack)
 
-#### Primary data infrastructure and pipeline repository
+##### Primary data infrastructure and pipeline repository
 
 - **Purpose**: All data processing pipelines, LLM job ad matching, ETL jobs, and
   analytics infrastructure
@@ -27,27 +27,27 @@ Overview of current Datadrivet repositories and their purposes.
 **When to add here**: Most data-related projects, utilities, and experiments
 should start here.
 
-[The CoFinder data infrastructure and data pipeline is more thoroughly explained on this page](03-01-cofinder-explained.md)
+[The CoFinder data infrastructure and data pipeline is more thoroughly explained on this page](/cofinder/)
 
 ## Azure Terraform Resources
 
-### [k8s-dataplatform](https://github.com/knowit-solutions-cocreate/k8s-dataplatform)
+#### [k8s-dataplatform](https://github.com/knowit-solutions-cocreate/k8s-dataplatform)
 
 All Azure related resources are deployed through here.
 
-## Cofinder Portal
+### Cofinder Portal
 
-### [datadrivet-cofinder-portal](https://github.com/knowit-solutions-cocreate/datadrivet-cofinder-portal)
+#### [datadrivet-cofinder-portal](https://github.com/knowit-solutions-cocreate/datadrivet-cofinder-portal)
 
-## Fluxcd (Kubernetes Continous Delivery)
+### Fluxcd (Kubernetes Continous Delivery)
 
-### [fluxcd-dataplatform](https://github.com/knowit-solutions-cocreate/fluxcd-dataplatform)
+#### [fluxcd-dataplatform](https://github.com/knowit-solutions-cocreate/fluxcd-dataplatform)
 
-## Template Repository
+### Template Repository
 
-### [datadrivet-template](https://github.com/knowit-solutions-cocreate/datadrivet-template)
+#### [datadrivet-template](https://github.com/knowit-solutions-cocreate/datadrivet-template)
 
-#### Template for creating new Datadrivet repositories
+##### Template for creating new Datadrivet repositories
 
 - **Purpose**: Standardized starting point for new projects
 - **Includes**:
@@ -58,7 +58,7 @@ All Azure related resources are deployed through here.
   - Pre-commit hooks
 
 **When to use**: Only when you have a
-[valid reason](05-setting-up-repository.html#step-2-valid-reasons-for-a-new-repository)
+[valid reason](/new-repository/#-good-reasons-for-new-repository)
 for a new repository.
 
 ## Support Repositories
