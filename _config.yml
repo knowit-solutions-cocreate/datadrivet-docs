@@ -5,19 +5,33 @@ url: "https://knowit-solutions-cocreate.github.io"
 
 markdown: kramdown
 highlighter: rouge
-theme: minima
+theme: minimal-mistakes-jekyll
 
 # GitHub Pages source directory
 source: .
 
-kramdown: 
-  toc_levels: "2,3" 
+include: ["_pages"]
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jemoji
+  - jekyll-include-cache 
 
 exclude:
   - devenv.lock

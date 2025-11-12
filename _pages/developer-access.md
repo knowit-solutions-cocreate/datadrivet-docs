@@ -1,6 +1,9 @@
 ---
-layout: page
 title: Different systems and how to get access
+permalink: /access/
+toc: true
+sidebar:
+  nav: "docs"
 ---
 
 A list of different systems related to CoFinder data processing pipelines is listed below together with how to get access.

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "openwebui and cofinder-mcp troubleshooting"
 date: 2025-10-16 09:00:00 +0200
 categories: slack-wisdom

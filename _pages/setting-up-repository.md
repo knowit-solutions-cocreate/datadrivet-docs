@@ -1,14 +1,10 @@
 ---
-layout: page
 title: Setting up a Repository
-nav_order: 50
+permalink: /new-repository/
+toc: true
+sidebar:
+  nav: "repos"
 ---
-
-<nav class="toc" markdown="1">
-
-- toc
-{:toc}
-</nav>
 
 ## Step 1: Do You Really Need a New Repository?
 
@@ -94,7 +90,7 @@ The template includes:
 
 ### Add Team Members
 
-1. Each team member follows the [Getting Started](02-getting-started.html) guide
+1. Each team member follows the [Getting Started](/getting-started/) guide
 2. Each member generates their age key using `setup-age-key`
 3. Add their public keys to `.sops.yaml`
 4. Create PR with the new keys
@@ -122,7 +118,7 @@ Reasons" above applies]
 If you're unsure whether your project needs a new repository:
 
 1. Review existing repositories in
-   [Existing Repositories](03-existing-repositories.html)
+   [Existing Repositories](/existing-repositories/)
 2. Discuss with the Datadrivet team:
    - Jimmy Flatting
 

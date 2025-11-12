@@ -1,10 +1,10 @@
 ---
-layout: page
 title: Services
-nav_order: 40
+permalink: /services/
+toc: true
+sidebar:
+  nav: "repos"
 ---
-
-## Services
 
 🚧 **Under Construction** 🚧
 
