@@ -4,6 +4,7 @@ gem "github-pages", group: :jekyll_plugins
 gem "jekyll-feed", "~> 0.12"
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
+gem "jemoji"
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
