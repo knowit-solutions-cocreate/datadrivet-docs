@@ -1,16 +1,10 @@
 ---
-layout: page
 title: Existing Repositories
-nav_order: 30
-toc:
-    min_level: 1
-    max_level: 1
+permalink: /existing-repositories/
+toc: true
+sidebar:
+  nav: "repos"
 ---
-
-- toc
-{:toc}
-
-## Existing Repositories
 
 Overview of current Datadrivet repositories and their purposes.
 
@@ -33,7 +27,7 @@ Overview of current Datadrivet repositories and their purposes.
 **When to add here**: Most data-related projects, utilities, and experiments
 should start here.
 
-[The CoFinder data infrastructure and data pipeline is more thoroughly explained on this page](03-01-cofinder-explained.md)
+[The CoFinder data infrastructure and data pipeline is more thoroughly explained on this page](/cofinder/)
 
 ## Azure Terraform Resources
 
@@ -64,7 +58,7 @@ All Azure related resources are deployed through here.
   - Pre-commit hooks
 
 **When to use**: Only when you have a
-[valid reason](05-setting-up-repository.html#step-2-valid-reasons-for-a-new-repository)
+[valid reason](/new-repository/#-good-reasons-for-new-repository)
 for a new repository.
 
 ## Support Repositories

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Standup board"
 date: 2025-10-14 11:48:00 +0200
 categories: slack-wisdom
