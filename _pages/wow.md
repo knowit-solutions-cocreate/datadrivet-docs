@@ -1,6 +1,7 @@
 ---
 title: Ways of Working
 permalink: /wow/
+toc: true
 sidebar:
   nav: "docs"
 ---
