@@ -21,7 +21,12 @@ docs:
     children:
       - title: "Access"
         url: /access/
-  
+        
+  - title: Ways of Working
+    children:
+      - title: "Ways of Working"
+        url: /wow/
+
   - title: Tips and tricks
     children:
       - title: Slack wisdom
