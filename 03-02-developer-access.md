@@ -36,4 +36,5 @@ TODO: add information for
 | LiteLLM API definition | [linked](https://litellm.platform.datadrivet.ai) | API definition to LiteLLM |  | No login | 
 | LiteLLM API keys | [linked](https://litellm.platform.datadrivet.ai) | API keys to access LiteLLM proxy either as an individual or as a project | Andreas, Jimmy, Jon-Erik | Jimmy can help with adding money | 
 | LiteLLM logs | [linked](https://litellm.platform.datadrivet.ai/ui/?login=success) | LiteLLM usage logs and costs + ability create API keys | Andreas, Jimmy, Jon-Erik | You likely don't need access unless you're tracking costs of something |
-| Openrouter | [linked](https://openrouter.ai) | Site to check which all LLMs we have access to |  | No need to log in, just browse models | 
+| Openrouter | [linked](https://openrouter.ai) | Site to check which all LLMs we have access to |  | No need to log in, just browse models |
+| Modal | [linked](https://modal.com/) | Site where CV-generator endpoint is hosted | Andreas | Connect to `knowit-cocreate` workspace |
