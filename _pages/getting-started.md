@@ -1,10 +1,10 @@
 ---
-layout: page
 title: Getting Started
-nav_order: 20
+permalink: /getting-started/
+toc: true
+sidebar:
+  nav: "docs"
 ---
-
-## Getting Started
 
 ## Prerequisites
 
@@ -375,8 +375,3 @@ menu
 
 Consult the repository specific documentation for next steps.
 
-## 6. Advanced issues
-
-See if the problem you're facing has been addressed in [Slack Wisdom](slack-wisdom/index)
-
-For issues relating to access to different systems, look through the section on [Developer Access](03-02-developer-access.md)

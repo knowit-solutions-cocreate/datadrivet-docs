@@ -5,6 +5,8 @@ gem "jekyll-feed", "~> 0.12"
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
 gem "jemoji"
+gem "minimal-mistakes-jekyll"
+gem "jekyll-include-cache"
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"

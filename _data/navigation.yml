@@ -1,0 +1,47 @@
+main:
+  - title: "About"
+    url: /about/
+  - title: "Get started"
+    url: /getting-started/
+  - title: "Repositories"
+    url: /existing-repositories/
+
+docs:
+  - title: Getting Started
+    children:
+      - title: "Get started"
+        url: /getting-started/
+
+  - title: Understand the system
+    children:
+      - title: "CoFinder"
+        url: /cofinder/
+  
+  - title: Get access
+    children:
+      - title: "Access"
+        url: /access/
+        
+  - title: Ways of Working
+    children:
+      - title: "Ways of Working"
+        url: /wow/
+
+  - title: Tips and tricks
+    children:
+      - title: Slack wisdom
+        url: /slack-wisdom/
+
+repos:
+  - title: Existing repositories
+    children:
+      - title: "Existing repositories"
+        url: /existing-repositories/
+  - title: Setting up a repository
+    children:
+      - title: "Setting up new repository"
+        url: /new-repository/
+  - title: Services
+    children:
+      - title: "Services"
+        url: /services/

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Linking PR to issue in github"
 date: 2025-10-22 09:00:00 +0200
 categories: slack-wisdom

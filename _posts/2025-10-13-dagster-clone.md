@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Admin issue in cloning dagster"
 date: 2025-10-13 00:00:00 +0200
 categories: slack-wisdom
