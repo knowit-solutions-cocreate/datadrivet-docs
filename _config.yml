@@ -5,7 +5,7 @@ url: "https://knowit-solutions-cocreate.github.io"
 
 markdown: kramdown
 highlighter: rouge
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 
 # GitHub Pages source directory
 source: .
