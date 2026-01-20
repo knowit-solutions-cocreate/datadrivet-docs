@@ -13,6 +13,84 @@ development environments**. We believe that every developer should be able to
 clone a repository and have a fully functional development environment within
 minutes, without manual setup or configuration.
 
+## Architecture
+
+# CoFinder Architecture
+
+High-level view of how the monorepo parts fit together (frontend, backend, pipelines, and shared data/services).
+
+![img](/assets/images/Cofinder-architecture.png)
+
+<!-- ```mermaid
+flowchart LR
+  user([Users])
+
+  subgraph Frontend
+    fe[Nuxt/Vue Frontend]
+  end
+
+  subgraph Backend
+    be[FastAPI API]
+    gql[Strawberry GraphQL]
+  end
+
+  subgraph External_Data_Sources
+    verama[Verama]
+    fieldglass[Fieldglass]
+    hubspot[HubSpot]
+    other[Other Sources]
+  end
+
+  subgraph Pipelines
+    dlt[DLT Ingestion]
+    dag[Dagster Orchestrator]
+    dbt[dbt Models]
+  end
+
+  subgraph Data_Stores
+    pg[(PostgreSQL)]
+    redis[(Redis)]
+    snow[(Snowflake)]
+    lancedb[(LanceDB)]
+    meili[(Meilisearch)]
+  end
+
+  subgraph External_Services
+    aad[Azure AD]
+    openai[OpenAI]
+    teams[MS Teams Webhooks]
+    arize[Arize Phoenix]
+  end
+
+  user -> fe -> be
+  be -> gql
+  be <-> aad
+  be -> pg
+  be -> redis
+  be -> meili
+  be -> snow
+  be -> lancedb
+  be -> openai
+  be -> teams
+  be -> arize
+
+  verama -> dlt
+  fieldglass -> dlt
+  hubspot -> dlt
+  other -> dlt
+  dlt -> dag
+  dag -> dbt
+  dbt -> snow
+  dag -> snow
+  dag -> openai
+  openai -> lancedb
+``` -->
+
+Notes:
+- Pipelines materialize data into Snowflake and embeddings into LanceDB.
+- Backend serves the app and consumes Snowflake/LanceDB for search, insights, and matching.
+- Frontend talks to Backend via REST and GraphQL.
+
 ## Technology Stack
 
 ### Visual Overview
