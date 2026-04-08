@@ -48,12 +48,3 @@ Kristian:
 >
 >   If latest job is 0/1, sync likely failed/hung.
 >
->   Hardening recommendation:
->
->   - Update cron curl command to fail fast and time out:
->
->   curl -fsS --max-time 60 --retry 3 --retry-delay 5 \
->     "http://cofinder-api-service.cofinder-api.svc.cluster.local:8000/fetch_latest"
->
->   - Include required auth header (X-API-Key) if enforced.
->   - Alert if cron job does not complete successfully.
