@@ -15,7 +15,7 @@ Kristian:
 > github som Tomas beskriver nedan:
 
 Tomas:
-> https://github.com/knowit-solutions-cocreate/datadrivet-cofinder-portal/issues/487
+> [https://github.com/knowit-solutions-cocreate/datadrivet-cofinder-portal/issues/487](https://github.com/knowit-solutions-cocreate/datadrivet-cofinder-portal/issues/487)
 > A user experienced a bug where they added new team ids via the cofinder portal, but they didn't get any matches on these new consultants. That is because emb_people_experience is not automatically backfilled, and 
 > consequently the new people's experiences are never considered during matching.
 > 
