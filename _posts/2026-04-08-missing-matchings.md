@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Missing embeddings cause new employees not appear in Cofinder"
-date: 2026-04-08 09:40:00 +0100
+date: 2026-04-08 02:40:00 +0100
 categories: slack-wisdom
 author: Kristian
 ---
