@@ -16,8 +16,8 @@ Overview of current Datadrivet repositories and their purposes.
 
 - **Purpose**: All data processing pipelines, LLM job ad matching, ETL jobs, and
   analytics infrastructure
-- **Technology**: Python, dbt, Dagster, Snowflake, Airtable and upstream message
-  intergrations,
+- **Technology**: Python, dbt, Dagster, Snowflake, Airtable, and upstream
+  message integrations
 - **Use Cases**:
   - Data ingestion from various sources (Airtable, Teamtailor, etc.)
   - Data transformations and modeling
@@ -39,7 +39,7 @@ All Azure related resources are deployed through here.
 
 #### [datadrivet-cofinder-portal](https://github.com/knowit-solutions-cocreate/datadrivet-cofinder-portal)
 
-### Fluxcd (Kubernetes Continous Delivery)
+### Fluxcd (Kubernetes Continuous Delivery)
 
 #### [fluxcd-dataplatform](https://github.com/knowit-solutions-cocreate/fluxcd-dataplatform)
 
@@ -115,7 +115,7 @@ direnv allow
 menu
 ```
 
-See each respective repository's `REAMDE.md` for mor information on how to start
+See each respective repository's `README.md` for more information on how to start
 contributing.
 
 ## Contributing Guidelines
@@ -124,7 +124,9 @@ contributing.
    of choice iterate on it. We are interested in how you think. At the time of
    writing(August 2025), Agents/LLMs tend to overlook existing coding patterns
    and this causes a lot of technical debt.
-1. **See rule 0** -
+1. **Match existing conventions** - Before adding a new pattern, check how the
+   surrounding repository already structures code, tests, configuration, and
+   scripts.
 
 ## Repository Maintenance
 

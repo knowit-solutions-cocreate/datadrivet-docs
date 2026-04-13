@@ -3,6 +3,8 @@ main:
     url: /about/
   - title: "Get started"
     url: /getting-started/
+  - title: "Access"
+    url: /access/
   - title: "Repositories"
     url: /existing-repositories/
 
@@ -19,7 +21,7 @@ docs:
   
   - title: Get access
     children:
-      - title: "Access"
+      - title: "System access"
         url: /access/
         
   - title: Ways of Working
@@ -41,7 +43,3 @@ repos:
     children:
       - title: "Setting up new repository"
         url: /new-repository/
-  - title: Services
-    children:
-      - title: "Services"
-        url: /services/

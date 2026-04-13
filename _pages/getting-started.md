@@ -55,7 +55,7 @@ trinity nix+devenv+direnv.
 ⚠️ **Important Note for Microsoft Defender for Mac Users**: Microsoft Defender
 for Mac, which is bundled with new Knowit laptops, has severe performance issues
 with Nix and development environments due to real-time scanning of the many
-files involved. This makes the development environment crippingly slow.
+files involved. This makes the development environment cripplingly slow.
 
 **Recommended solutions:**
 
@@ -374,4 +374,3 @@ menu
 ```
 
 Consult the repository specific documentation for next steps.
-

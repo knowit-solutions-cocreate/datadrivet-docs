@@ -88,7 +88,8 @@ flowchart LR
 
 Notes:
 - Pipelines materialize data into Snowflake and embeddings into LanceDB.
-- Backend serves the app and consumes Snowflake/LanceDB for search, insights, and matching.
+- Backend serves the app and consumes PostgreSQL for search, insights, and matching.
+- The MCP server uses Meilisearch
 - Frontend talks to Backend via REST and GraphQL.
 
 ## Technology Stack

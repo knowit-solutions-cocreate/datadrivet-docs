@@ -6,19 +6,20 @@ nav_order: 10
 
 ## Datadrivet Infrastructure Documentation
 
-Welcome to the Datadrivet infrastructure documentation. This site provides
-comprehensive guides for setting up and working with our development
-environment.
+This site is the entry point for working in the Datadrivet and CoFinder
+ecosystem: onboarding, repository conventions, system access, and architecture.
 
-## Quick Navigation
+## Start Here
 
-- [Getting Started](/getting-started/) - Set up your development
-  environment
-- [About](/about/) - Learn about our infrastructure approach
-- [Setting up a Repository](/new-repository/) - Create new projects
-- [Existing Repositories](/existing-repositories/) - Browse current
-  projects
-- [Slack Wisdom](/slack-wisdom/) - Find nuggets of wisdom from relevant Slack channels
+If you are new to the project, use these pages in order:
+
+1. [Getting Started](/getting-started/) to install the local toolchain and
+   verify that `devenv` works.
+2. [Access](/access/) to understand which systems you need access to and who
+   can grant it.
+3. [Existing Repositories](/existing-repositories/) to decide where your work
+   belongs.
+4. [CoFinder](/cofinder/) to understand the main data flow and architecture.
 
 ## Overview
 
@@ -30,12 +31,25 @@ provide:
 - **Automatic setup** - Environment activates when you enter a project directory
 - **Cross-platform support** - Works on Linux, macOS, and Windows (WSL)
 
-Get started by following our [Getting Started](/getting-started/) guide.
+## Main Sections
 
-## Adding to Slack Wisdom
+- [Getting Started](/getting-started/) - Local setup and first-run verification
+- [Access](/access/) - System access, owners, and where credentials live
+- [Existing Repositories](/existing-repositories/) - Where to add new work
+- [Setting up a Repository](/new-repository/) - Criteria for creating a new repo
+- [CoFinder](/cofinder/) - Pipeline and system overview
+- [Ways of Working](/wow/) - Collaboration and review conventions
+- [Slack Wisdom](/slack-wisdom/) - Short operational notes captured from Slack
 
-In the tab [Slack wisdom](/slack-wisdom/), we have short snippets from Slack that can prove to be useful in the long term. In order to add a new snippet, create a new file under _posts, using naming convention YYYY-MM-DD-brief-post-name.md . Make sure that your post has the front matter defined like the other posts in the folder. If there are any images you want to use in the post, place these under assets/images with a descriptive name. 
+## Slack Wisdom
 
-You don't need to do anything else, the feed of posts in [Slack wisdom](/slack-wisdom/) is automatically generated from post
+Use [Slack Wisdom](/slack-wisdom/) for short operational fixes and recurring
+troubleshooting notes that came out of project discussions.
 
-You don't need to PR adding a single post, just merge directly to main. YOLO.
+To add a new entry:
+
+1. Create a file under `_posts/` named `YYYY-MM-DD-short-title.md`.
+2. Reuse the same front matter fields as the existing posts.
+3. Add any images under `assets/images/` with descriptive filenames.
+
+The page is generated automatically from posts in the `slack-wisdom` category.
