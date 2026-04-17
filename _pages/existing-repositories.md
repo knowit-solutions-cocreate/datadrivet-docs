@@ -8,36 +8,45 @@ sidebar:
 
 Overview of current Datadrivet repositories and their purposes.
 
-### Main Dagster Data Infrastructure Repository
+### Main CoFinder Monorepo
+
+#### [cofinder](https://github.com/knowit-solutions-cocreate/cofinder)
+
+##### Primary active repository for CoFinder
+
+- **Purpose**: Main monorepo for CoFinder frontend, backend, MCP integration,
+  and data pipelines
+- **Technology**: Nuxt/Vue, FastAPI, dbt, Dagster, Postgres, Snowflake,
+  DuckDB, LanceDB, and related integrations
+- **Use Cases**:
+  - CoFinder portal development
+  - Backend APIs and MCP server
+  - Data ingestion, transformations, and matching pipelines
+  - Operational tooling and local development setup
+
+**When to add here**: Most CoFinder-related work should now start here.
+
+[The CoFinder data infrastructure and data pipeline is more thoroughly explained on this page](/cofinder/)
+
+### Historical CoFinder Repositories
 
 #### [datadrivet-infra-opendatastack](https://github.com/knowit-solutions-cocreate/datadrivet-infra-opendatastack)
 
-##### Primary data infrastructure and pipeline repository
+Former standalone repository for the CoFinder pipelines and related data
+infrastructure.
 
-- **Purpose**: All data processing pipelines, LLM job ad matching, ETL jobs, and
-  analytics infrastructure
-- **Technology**: Python, dbt, Dagster, Snowflake, Airtable, and upstream
-  message integrations
-- **Use Cases**:
-  - Data ingestion from various sources (Airtable, Teamtailor, etc.)
-  - Data transformations and modeling
-  - Analytics and reporting pipelines
-  - LLM Job ad Matching (Cofinder pipeline)
+#### [datadrivet-cofinder-portal](https://github.com/knowit-solutions-cocreate/datadrivet-cofinder-portal)
 
-**When to add here**: Most data-related projects, utilities, and experiments
-should start here.
+Former standalone repository for the CoFinder portal.
 
-[The CoFinder data infrastructure and data pipeline is more thoroughly explained on this page](/cofinder/)
+These repos were later merged into the `cofinder` monorepo. Their history has
+been preserved, but active development has moved to `cofinder`.
 
 ## Azure Terraform Resources
 
 #### [k8s-dataplatform](https://github.com/knowit-solutions-cocreate/k8s-dataplatform)
 
 All Azure related resources are deployed through here.
-
-### Cofinder Portal
-
-#### [datadrivet-cofinder-portal](https://github.com/knowit-solutions-cocreate/datadrivet-cofinder-portal)
 
 ### Fluxcd (Kubernetes Continuous Delivery)
 
@@ -84,12 +93,15 @@ for a new repository.
 
 ### Start with Existing Repositories
 
-**For most new work, add to `datadrivet-infra-opendatastack`:**
+**For most new CoFinder work, add to `cofinder`:**
 
+- ✅ Frontend and portal changes
+- ✅ Backend APIs and MCP work
 - ✅ New data sources or integrations
+- ✅ Matching and pipeline changes
 - ✅ Analytics scripts and reports
 
-**For CRUD things & MCP server, add to `datadrivet-cofinder-portal`**
+**Use `k8s-dataplatform` and `fluxcd-dataplatform` only when the change is about infrastructure or deployment.**
 
 ### Consider New Repository Only If
 
@@ -103,10 +115,9 @@ for a new repository.
 ### 1. Clone and Setup
 
 ```bash
-# Example: Main infrastructure repository
-git clone git@github.com:knowit-solutions-cocreate/datadrivet-infra-opendatastack.git
-cd datadrivet-infra-opendatastack
-direnv allow
+# Example: Main CoFinder repository
+git clone git@github.com:knowit-solutions-cocreate/cofinder.git
+cd cofinder
 ```
 
 ### 2. Explore Available Commands

@@ -16,7 +16,10 @@ missing, add it here rather than leaving the knowledge only in Slack.
 
 | System    | Link | What it does  | Who can help you with access | Other comments? |
 | -------- | ------- | -------- | ------- | ------- |
-| SOPS secrets | [linked](https://github.com/knowit-solutions-cocreate/datadrivet-infra-opendatastack/tree/main/secrets) | Most project secrets are stored in encrypted files in Git | All developers in the project | Follow the [Getting Started](/getting-started/) guide to add your key |
+| GitHub org + CoFinder repo | [linked](https://github.com/knowit-solutions-cocreate/cofinder) | Required to clone the monorepo and contribute code | All developers in the project | You need access both to the GitHub organization and to the `cofinder` repository |
+| SOPS secrets | [linked](https://github.com/knowit-solutions-cocreate/cofinder/tree/main/secrets) | Most project secrets are stored in encrypted files in Git | All developers in the project | Secrets live in `cofinder/secrets/*.env`; developer keys live in `cofinder/.sops.yaml` |
+| Age key / local secret decryption |  | Lets you decrypt the repo's encrypted `.env` files locally | All developers in the project | Typical setup is to generate an age key, get it added to `.sops.yaml`, then decrypt `backend/.env`, `frontend/.env`, and `pipelines/.env` |
+| Azure `datadrivet-dev` login | [linked](https://portal.azure.com) | Microsoft login used during local development and some service integrations | Ask the team member onboarding you if this is missing | The current dev-container flow expects you to sign in and choose the `datadrivet-dev` tenant/account |
 | Azure KeyVault | [linked](https://portal.azure.com) | A secure location to store some access information | Tom, Lunken, Jimmy, Ruben, Fredrik M | Ask to be added to team "Invativa" and to get role "Key Vault Secrets User" for datadrivet-cluster-prod |
 | Keycloak |  | Identity provider for several internal platform services | Jimmy, Fredrik, Andreas, Jon-Erik, Ruben, Tomas | Linked to Vault, MinIO, and Onyxia |
 | Hashicorp Vault | [linked](https://vault.platform.datadrivet.ai/ui) | Stores secrets used by internal platform services | see Keycloak | Access typically follows your platform role |
@@ -30,7 +33,8 @@ missing, add it here rather than leaving the knowledge only in Slack.
 | Dagster dashboard | [linked](https://dagster.platform.datadrivet.ai/) | Web UI to inspect production pipeline runs and asset state | see Azure KeyVault | Username and password are in Azure `datadrivet-cluster-prod` secrets |
 | MinIO | [linked](https://minio-console.platform.datadrivet.ai/) | S3-compatible object storage hosted by the platform team | see Keycloak | You should get access through Keycloak when you get added to Terraform as a developer |
 | Onyxia | [linked](https://onyxia.platform.datadrivet.ai/) | Self-service portal for data services, code spaces, and other OSS tools | see Keycloak | Status changes over time; if unavailable, ask in Slack before assuming it is gone |
-| LanceDB | Repository-local or service-local depending on workload | Vector store used for embedding-based retrieval | Ask the owning developer for the relevant service | Access is usually indirect through the pipeline or application rather than a shared UI |
+| DuckDB (local dev) | Repository-local | Default local dbt database in development | No separate access needed | Used locally for dev workflows; the path is configured via `DUCKDB_PATH` in the pipeline setup |
+| LanceDB | Repository-local or service-local depending on workload | Vector store used for embedding-based retrieval | Ask the owning developer for the relevant service | Access is usually indirect through the pipeline or application rather than a shared UI; there is normally no shared UI to request access to |
 
 ## LLM-related
 
